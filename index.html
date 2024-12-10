@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--Cesar Jaquez
+1001840593-->
+
+
+<!-- THIS ONE WORKED !!!!!-->
+<html lang="en">
+
+	<head>
+	<meta charset="utf-8">
+	<title>Thank you for choosing Beats Headphones</title>
+	 <link rel ="stylesheet" type="text/css" href="index_css.css">
+	<script type="text/javascript">
+		var timer;
+		var iValue;
+		
+	function startTimer()
+	{
+		timer = window.setInterval("genNumber()", 3000);
+		window.setTimeout("checkNumber()", 3000);//check ex7 for if time no work
+	}
+	
+	function genNumber()
+	{
+		iValue = (Math.ceil(Math.random()*10));
+		
+		if (iValue%3 == 0)
+		{
+			if (confirm("You have been randomly selected to participate in a customer satisfaction survey"))
+			 open("4315_Lab1_cxj0593.html", "_blank");
+		}
+	}
+	
+	function checkNumber()
+	{
+		window.clearInterval(timer);
+	}
+	
+	function createCookie(cName, cValue, expDays)
+	{
+		var d = new Date();
+		d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+         var expires = "expires=" + d.toUTCString();
+         document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";//maybe take out path, if not working
+	}
+	
+	function readCookie(cName)
+	{
+		var keyName = cName + "=";
+         var cArray = document.cookie.split(';');
+         for (var i = 0; i < cArray.length; i++) {
+             var c = cArray[i].trim();//dont declare outside cause no work idk why either 
+             if (c.indexOf(keyName) === 0) {
+                 return c.substring(keyName.length, c.length);
+             }
+         }
+             return "";
+	}
+	
+	function expCookie(cName)
+	{
+		document.cookie = cName + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";//if this dont work go back to ch6, prof commmented one.
+	}
+	function checkCookie() 
+	{
+        var user = readCookie("userName");
+        var Message = document.getElementById("Message");
+
+        if (user !== "") {
+            Message.innerHTML = "Welcome back, " + user + "! We hope you will enjoy your beats headphones experience!";
+            document.getElementById("resetLink").innerHTML = "Click here if you are not" + " " + user ;//this is new check if it doesnt work. 
+        } else {
+            Message.innerHTML = "Want a more personalized experience on our website?";
+			document.getElementById("resetLink").innerHTML = "Please click here to provide your name";
+           // document.getElementById("resetLink").style.display = "block";
+			
+		}
+	}
+	
+	function newCookie() 
+	{
+        expCookie("userName");
+
+        var user = prompt("Welcome! Please enter your name:", "");
+        if (user !== "" && user !== null) //check ex6 if no work.
+		{
+            createCookie("userName", user, 21);
+            document.getElementById("Message").innerHTML = "Welcome, " + user + "! We hope you will enjoy your beats headphones experience!";
+            //document.getElementById
+			document.getElementById("resetLink").innerHTML = "Click here if you are not" + " " + user;
+			//document.getElementById("resetLink").innerHTML = "";
+			document.getElementById("resetLink").style.display = "none";
+        } else {
+            document.getElementById("Message").innerHTML = "Want a more personalized experience on our website?";
+			
+        }
+	}
+	function messi()
+	{
+		open("https://www.youtube.com/watch?v=Y0MFccgC6L8");
+	}
+	
+	</script>
+	</head>
+	<body onload="checkCookie(); startTimer()">
+		
+		<h1 class="heading1">Thank You for Using Beats Headphones</h1>
+		<nav>
+			<table>
+				<tr>
+					<td><b><a href ="index.html"> Home</a></td>
+					<td><b><a href="Product_CJ.html"> Products</a></td>
+					<td><b><a href="Contact_CJ.html"> Contact Us</a></td>
+					<td><b><a href="About_CJ.html"> About Us</a></td>
+				</tr>
+			</table>
+		</nav>
+		<div class="div">People Arenʼt Hearing All The Music. Beats by Dr. Dre (Beats) is a 
+			leading audio brand founded in 2006 by Dr. Dre and Jimmy Iovine. Through 
+			its family of premium consumer headphones, earphones and speakers, Beats has 
+			introduced an entirely new generation to the possibilities of premium sound entertainment. 
+			The brand’s continued success helps bring the energy, emotion and excitement of 
+			playback in the recording studio back to the listening experience for music lovers worldwide. 
+			Beats was acquired by Apple Inc. in July 2014.Thank you for your support!</div>
+		<img class="image" src="Beats_logo.jpg" alt="beats headphones"/>
+		
+	
+		<img class="image" src="beats_pic.jpg" alt="beats multiple colors"/>
+		<div class="div2"><p><a id = "Message"></a></p>
+		<!--<p id = "resetLink"><a href="javascript:void(0);" onclick="newCookie()">Please click here to provide your name.</a></p>-->
+		<!--<p id = "resetLink"><a href="javascript: checkCookie;" onclick="newCookie()"></a></p>-->
+		<p><a id = "resetLink" href="javascript:newCookie()"></a></p><!-- this works DO NOT TOUCH-->
+		<p><a href="javascript:messi()">Click here to view our latest brand representative!</a></p>
+		</div>
+		
+		
+		
+		
+	
+	
+	</body>
+
+
+
+
+
+
+</html>

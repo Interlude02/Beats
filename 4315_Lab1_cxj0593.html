@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Survey</title>
+    <style>
+    body        {background-color: lightpink;}
+    .right      {text-align: right;}
+    h2          {text-align: center;}
+    table       {margin: auto;}
+    ul			{text-align: left;
+                 margin-left:40%;
+                 list-style-type: none;}
+    h1          {text-align: center;}
+    div         {width: 70%;
+                text-align: justify;
+                float: left;
+                padding: 2%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1.3em;}
+    img         {width: 25%;
+                height: auto;
+                border-radius: 16%;}
+    </style>
+</head>
+<body>
+    <h1>Thank You for Using Beats Headphones</h1>
+    <div>
+        You have been randomly selected to participate in our customer satisfaction
+        survey. Please tell us a little about yourself by filling in the requested
+        information at the top of the survey, then respond to the survey opinion
+        statements based on your experience with Beats. To show our appreciation,
+        we will send you a $15 beats eGift certificate via email
+    </div>
+    <img src="Beats_logo.jpg" alt="beats headphones"/>
+
+    <hr>
+
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Personal Information</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="right"><label>First Name:</label></td>
+               <td><input name="fname" type="text" size="15" maxlength="15" required autofocus></td>
+
+                <td class="right"><label>Last Name:</label></td><!--add the td on it and not embedded on both-->
+                <td><input name="lname" type="text" size="15" maxlength="15" required></td>
+
+            </tr>
+            <tr>
+                <td class="right"><label>Email Address:</label></td>
+                <td><input name="email" type="email" size="15" maxlength="40"  placeholder="joe@abc.com" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required></td>
+
+                <td class="left"><label>Phone Number (optional):</label></td>
+                <td><input name="phone" type="tel" size="15" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"></td>
+            </tr>
+            <tr>
+                <td class="right"><label>Age Group:</label></td>
+                <td><input name="age" type="radio" value="under 21"><label>Under 21</label>
+                    <input name="age" type="radio" value="21-40"><label>21-40</label>
+                    <input name="age" type="radio" value="over 40"><label>Over 40</label></tr>
+
+
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>Please Respond to the opinion statements using the following scale:</h2>
+
+        <ul>
+            <li>1 = Strongly Agree</li>
+            <li>2 = Somewhat Agree</li>
+            <li>3 = Neither Agree nor Disagree</li>
+            <li>4 = Somewhat Disagree</li>
+            <li>5 = Stronly Disagree</li>
+        </ul>
+
+        <ul style="list-style-type:circle; margin-left: auto; margin-right: auto; max-width:25%; text-align:left;">
+            <li>Beats products are always of high quality
+                <select name="ratings" id="rate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+            <li>Beats products have good sound quality
+                <select name="ratings" id="rate2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+            <li>Beats products are reasonably priced
+                <select name="ratings" id="rate3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+            <li>Beats products have great colors
+                <select name="ratings" id="rate4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+            <li>Overall, I am satisfied with Beats products
+                <select name="ratings" id="rate5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+        </ul>
+        <p style="text-align: center;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+
+
+
+    </form>
+</body>
+</html>

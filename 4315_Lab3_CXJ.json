@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 101, 
+		"prodImg": "Images/Beats_Pill_x_Kim.jpg",
+		"prodName": "Beats Pill x Kim",
+		"prodDesc": "The new Collaboration between Beats and Kim Kardashian",
+		"prodPrice": 149.99
+	},
+	{
+		"prodID": 102,
+		"prodImg": "Images/Beats_Pill.jpg",
+		"prodName": "Beats Pill",
+		"prodDesc": "Portable Bluetooth speaker with powerful, room-filling sound",
+		"prodPrice": 149.99
+	},
+	{
+		"prodID": 103,
+		"prodImg": "Images/Beats_Solo_Buds.jpg",
+		"prodName": "Beats Solo Buds",
+		"prodDesc": "Incredible sound packed in the smallest case we’ve ever made.",
+		"prodPrice": 79.99
+	},
+	{
+		"prodID": 104, 
+		"prodImg": "Images/Beats_Iphone_Case.jpg",
+		"prodName": "Beats iPhone 16 Case",
+		"prodDesc": "Hardshell case with microfiber lining for iPhone 16 series devices.",
+		"prodPrice": 49.00
+	},
+	{
+		"prodID": 105, 
+		"prodImg": "Images/Beats_Solo_4.jpg",
+		"prodName": "Beats Solo 4",
+		"prodDesc": "Ultralight on-ear headphones with up to 50 hours of battery life",
+		"prodPrice": 199.99
+	},
+	{
+		"prodID": 106, 
+		"prodImg": "Images/Beats_Studio_Pro_x_Kim.jpg",
+		"prodName": "Beats Studio Pro x Kim",
+		"prodDesc": "Our most advanced headphones in colors curated by Kim Kardashian",
+		"prodPrice": 349.99
+	},
+	{
+		"prodID": 107,
+		"prodImg": "Images/Beats_Studio_Pro.jpg",
+		"prodName": "Beats Studio Pro",
+		"prodDesc": "Premium over-ear noise-cancelling headphones.",
+		"prodPrice": 349.99
+	},
+	{
+		"prodID": 108,
+		"prodImg": "Images/Beats_Studio_Buds+.jpg",
+		"prodName": "Beats Studio Buds +",
+		"prodDesc": "Advanced earbuds with incredible sound and noise cancelling.",
+		"prodPrice": 169.99
+	},
+	{
+		"prodID": 109, 
+		"prodImg": "Images/Beats_Fit_Pro.jpg",
+		"prodName": "Beats Fit Pro",
+		"prodDesc": "Premium earbuds with flexible, secure-fit wingtips.",
+		"prodPrice": 199.99
+	},
+	{
+		"prodID": 110, 
+		"prodImg": "Images/Beats_Flex.jpg",
+		"prodName": "Beats Flex",
+		"prodDesc": "Magnetic earbuds with convenient flex cable for on the go.",
+		"prodPrice": 69.99
+	}
+]
